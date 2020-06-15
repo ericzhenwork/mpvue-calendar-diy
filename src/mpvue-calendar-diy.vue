@@ -917,7 +917,7 @@
             this.oversliding = false;
             this.month = 11;
             this.year = parseInt(this.year, 10) - 1;
-            this.monthIndex = this.monthIndex - 1;
+            this.monthIndex -= 1;
           } else if (this.monthIndex === 0) {
             this.oversliding = true;
             this.monthIndex = 12;
@@ -926,11 +926,11 @@
           } else if (this.monthIndex === 13) {
             this.month = 11;
             this.year = parseInt(this.year, 10) - 1;
-            this.monthIndex = this.monthIndex - 1;
+            this.monthIndex -= 1;
           } else {
             this.oversliding = false;
             this.month = parseInt(this.month, 10) - 1;
-            this.monthIndex = this.monthIndex - 1;
+            this.monthIndex -= 1;
           }
           this.updateHeadMonth('custom');
           this.render(this.year, this.month);
@@ -940,7 +940,7 @@
         };
         if (!this.weekSwitch) return changeMonth();
         const changeWeek = () => {
-          this.weekIndex = this.weekIndex - 1;
+          this.weekIndex -= 1;
           this.days = [this.monthDays[this.weekIndex]];
           this.monthRangeDays = [this.days];
           this.setMonthRangeofWeekSwitch();
@@ -969,12 +969,12 @@
             this.oversliding = false;
             this.month = 0;
             this.year = parseInt(this.year, 10) + 1;
-            this.monthIndex = this.monthIndex + 1;
+            this.monthIndex += 1;
           } else if (this.monthIndex === 0 && this.month === 11) {
             this.oversliding = false;
             this.month = 0;
             this.year = parseInt(this.year, 10) + 1;
-            this.monthIndex = this.monthIndex + 1;
+            this.monthIndex += 1;
           } else if (this.monthIndex === 13) {
             this.oversliding = true;
             this.monthIndex = 1;
@@ -983,7 +983,7 @@
           } else {
             this.oversliding = false;
             this.month = parseInt(this.month, 10) + 1;
-            this.monthIndex = this.monthIndex + 1;
+            this.monthIndex += 1;
           }
           this.updateHeadMonth('custom');
           this.render(this.year, this.month);
@@ -992,7 +992,7 @@
         };
         if (!this.weekSwitch) return changeMonth();
         const changeWeek = () => {
-          this.weekIndex = this.weekIndex + 1;
+          this.weekIndex += 1;
           this.days = [this.monthDays[this.weekIndex]];
           this.monthRangeDays = [this.days];
           this.setMonthRangeofWeekSwitch();

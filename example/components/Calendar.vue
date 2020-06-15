@@ -57,7 +57,7 @@
 </template>
 
 <script>
-  import Calendar from '../../src/mpvue-calendar';
+  import Calendar from '../../src/mpvue-calendar-diy.vue';
   import '../../src/browser-style.css';
   import { holiday } from './holiday';
 

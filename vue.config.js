@@ -1,7 +1,7 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/mpvue-calendar/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/mpvue-calendar-diy/' : '/',
   configureWebpack: {
     context: path.resolve(__dirname, './'),
     entry: {
@@ -9,4 +9,4 @@ module.exports = {
     },
   },
   lintOnSave: process.env.NODE_ENV !== 'production'
-}
+};
