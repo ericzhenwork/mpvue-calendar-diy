@@ -24,7 +24,7 @@
 #### 🖥  [点击浏览器端预览](http://preview.binlive.cn/mpvue-calendar#/ "浏览器端预览")
 ## 安装
 ```
-npm i mpvue-calendar -S
+npm i mpvue-calendar-diy -S
 ```
 ## 使用
 - `import Calendar from 'mpvue-calendar'` 引入组件
