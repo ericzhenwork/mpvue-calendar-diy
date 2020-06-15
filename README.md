@@ -15,7 +15,7 @@
   </a>
 </p>
 
-<h1 align="center">mpvue-calendar</h1>
+<h1 align="center">mpvue-calendar-ext(对原mpvue-calendar进行了定制)</h1>
 
 基于vue-calendar的适配**mpvue**平台的的微信小程序日历组件，现在已可以使用在**浏览器端**
 ## 预览
