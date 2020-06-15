@@ -1,6 +1,6 @@
 {
   "name": "mpvue-calendar-diy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "vue calendar mpvue-calendar-ext vue-calendar",
   "main": "src/mpvue-calendar-diy.vue",
   "scripts": {

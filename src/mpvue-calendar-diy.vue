@@ -45,7 +45,6 @@
                'mc-last-month': child.lastMonth, 'mc-next-month': child.nextMonth}, child.className, child.rangeClassName]"
             @click="select(k1, k2, child, $event, index)"
             class="mc-day"
-            :style="itemStyle"
           >
             <span v-if="showToday.show && child.isToday" class="mc-today calendar-date">{{showToday.text}}</span>
             <span :class="[{'mc-date-red': k2 === (monFirst ? 5 : 0) || k2 === 6}, 'calendar-date']" v-else>{{child.day}}</span>
